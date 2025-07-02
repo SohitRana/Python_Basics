@@ -45,7 +45,9 @@ def main():
     # Load the face detection model
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
-    cap = cv2.VideoCapture(0)
+    url = "rtsp://admin:Softo@2005@192.168.29.240:554/cam/realmonitor?channel=1&subtype=0"
+
+    cap = cv2.VideoCapture(url)
     if not cap.isOpened():
         print("Error: Could not open webcam.")
         return
