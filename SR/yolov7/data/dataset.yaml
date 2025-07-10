@@ -1,0 +1,7 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 9
+names: ['Bhupender_Present', 'Chirag_Present', 'Hemant_sir_Present', 'Manan_Present', 'Osama_Present', 'Paras_Present', 'Parlav_Present', 'Shresth_Present', 'Sohit_present']
+
